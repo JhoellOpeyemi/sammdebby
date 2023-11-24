@@ -17,6 +17,11 @@ const GlobalStyles = createGlobalStyle`
 
     p {
         line-height: 1.45;
+    }  
+    
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 `;
 
