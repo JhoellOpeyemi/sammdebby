@@ -29,8 +29,15 @@ export const Button = styled.button`
     type === "secondary" &&
     css`
       border: 1px solid #7e83fd;
-      border-radius: 1rem;
+      border-radius: 0.75rem;
       letter-spacing: 4px;
       padding: 0.75rem 1rem;
+    `}
+
+    ${({ text }) =>
+    text === "center" &&
+    css`
+      left: 50%;
+      transform: translateX(-50%);
     `}
 `;

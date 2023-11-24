@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const NavWrapper = styled.div`
-  padding: 2.5rem 7.5%;
+  padding: 2.2rem 7.5%;
   position: fixed;
   width: 100%;
   top: 0;
@@ -35,13 +35,6 @@ export const StyledNav = styled.nav`
   height: 100vh;
   background-color: #111;
   padding: 0 7.5%;
-
-  div {
-    width: 100%;
-    height: 1px;
-    background-color: #eee;
-    margin: 2.5rem 0;
-  }
 
   ${({ nav }) =>
     nav === false &&

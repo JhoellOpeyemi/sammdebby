@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledSlider = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  animation: slide 20s linear infinite;
+  animation: slide 25s linear infinite;
 
   & > div {
     margin-right: 1.375rem;

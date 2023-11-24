@@ -6,6 +6,8 @@ import { SliderContainer, StyledSection, TextGroup } from "./WhoWeAre.styled";
 
 import TestImage from "../../../assets/images/test-image.png";
 import TestImage2 from "../../../assets/images/test-image2.png";
+import bgIcon from "../../../assets/images/bg2.svg";
+import { BackgroundIcon } from "../../../styled/Utils.styled";
 
 const WhoWeAre = () => {
   const images = [TestImage2, TestImage];
@@ -30,6 +32,15 @@ const WhoWeAre = () => {
         <Slider images={images} />
         <Slider images={images} />
       </SliderContainer>
+
+      <BackgroundIcon
+        src={bgIcon}
+        alt=""
+        top="8rem"
+        right="-5.8rem"
+        width="20rem"
+        height="20rem"
+      />
     </StyledSection>
   );
 };

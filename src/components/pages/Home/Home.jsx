@@ -5,6 +5,7 @@ import WhoWeAre from "../../sections/WhoWeAre/WhoWeAre";
 
 import TestImage from "../../../assets/images/test-image.png";
 import { Container } from "../../../styled/Utils.styled";
+import Classes from "../../sections/Classes/Classes";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
 
       <Container>
         <WhoWeAre />
+        <Classes />
       </Container>
     </>
   );

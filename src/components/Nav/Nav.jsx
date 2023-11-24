@@ -8,6 +8,7 @@ import {
   StyledNavLinks,
   StyledSvg,
 } from "./Nav.styled";
+import { StyledDivider } from "../../styled/Utils.styled";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
@@ -22,9 +23,9 @@ const Nav = () => {
 
       <StyledNav nav={nav}>
         <StyledNavLinks href="/">Home</StyledNavLinks>
-        <div></div>
+        <StyledDivider color="#eee" margin="2.5rem 0" />
         <StyledNavLinks href="/">Who We Are</StyledNavLinks>
-        <div></div>
+        <StyledDivider color="#eee" margin="2.5rem 0" />
         <StyledNavLinks href="/">Our Classes</StyledNavLinks>
       </StyledNav>
 

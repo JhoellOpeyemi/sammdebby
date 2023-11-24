@@ -4,6 +4,8 @@ export const StyledText = styled.p`
   font-family: "Poppins Regular";
   font-size: 1rem;
   color: ${({ color }) => color};
+  margin-bottom: ${({ marginBottom }) =>
+    marginBottom ? marginBottom : "1rem"};
 
   ${({ type }) =>
     type === "medium" &&
