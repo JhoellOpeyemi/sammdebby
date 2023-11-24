@@ -5,9 +5,3 @@ export const QuoteWrapper = styled.section`
   text-align: center;
   padding: 8.75rem 0;
 `;
-
-export const Text = styled.p`
-  font-family: "Poppins Regular";
-  font-size: 1.25rem;
-  color: #eee;
-`;
