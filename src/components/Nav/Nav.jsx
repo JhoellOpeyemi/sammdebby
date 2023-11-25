@@ -17,16 +17,28 @@ const Nav = () => {
     setNav(!nav);
   };
 
+  const handleHome = () => {
+    if (nav === true) setNav(!nav);
+  };
+
   return (
     <NavWrapper nav={nav}>
-      <Name>SammDebby</Name>
+      <Name to="/" onClick={handleHome}>
+        SammDebby
+      </Name>
 
       <StyledNav nav={nav}>
-        <StyledNavLinks href="/">Home</StyledNavLinks>
-        <StyledDivider color="#eee" margin="2.5rem 0" />
-        <StyledNavLinks href="/">Who We Are</StyledNavLinks>
-        <StyledDivider color="#eee" margin="2.5rem 0" />
-        <StyledNavLinks href="/">Our Classes</StyledNavLinks>
+        <StyledNavLinks to="/" onClick={navHandler}>
+          Home
+        </StyledNavLinks>
+        <StyledDivider margin="2.5rem 0" />
+        <StyledNavLinks to="/about" onClick={navHandler}>
+          Who We Are
+        </StyledNavLinks>
+        <StyledDivider margin="2.5rem 0" />
+        <StyledNavLinks to="/classes" onClick={navHandler}>
+          Our Classes
+        </StyledNavLinks>
       </StyledNav>
 
       <Hamburger onClick={navHandler}>

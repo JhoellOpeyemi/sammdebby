@@ -22,7 +22,9 @@ const ClassCard = ({ type, price, benefit1, benefit2, benefit3, benefit4 }) => {
         <Benefit>{benefit4}</Benefit>
       </BenefitsGroup>
 
-      <Button type="secondary">Enroll</Button>
+      <Button to="/classes" type="secondary">
+        Enroll
+      </Button>
     </CardContainer>
   );
 };

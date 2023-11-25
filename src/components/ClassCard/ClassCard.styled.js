@@ -6,26 +6,26 @@ export const CardContainer = styled.div`
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   text-align: center;
-  background-color: #fbfbfb;
+  background-color: ${({ theme }) => theme.color.bgColor};
   text-transform: capitalize;
   margin: 0 auto;
 
-  button {
+  a {
     width: 100%;
   }
 `;
 
 export const CardType = styled.h4`
   font-family: "Poppins SemiBold";
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  color: #888;
+  font-size: ${({ theme }) => theme.fontSize.mobile.medium};
+  margin-bottom: 1.35rem;
+  color: ${({ theme }) => theme.color.veryLightBlack};
 `;
 
 export const Price = styled.p`
   font-family: "Poppins SemiBold";
-  font-size: 1.75rem;
-  color: #222;
+  font-size: ${({ theme }) => theme.fontSize.mobile.large};
+  color: ${({ theme }) => theme.color.black};
 `;
 
 export const BenefitsGroup = styled.div`

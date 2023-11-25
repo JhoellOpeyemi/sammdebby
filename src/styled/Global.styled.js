@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background-color: #fbfbfb;
+        background-color: ${({ theme }) => theme.color.bgColor};
         position: relative;
     }
 

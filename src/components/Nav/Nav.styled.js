@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const NavWrapper = styled.div`
@@ -15,12 +16,11 @@ export const NavWrapper = styled.div`
   mix-blend-mode: ${({ nav }) => (nav === true ? "normal" : "difference")};
 `;
 
-export const Name = styled.p`
+export const Name = styled(NavLink)`
   font-family: "Ink Free Regular";
-  font-size: 1.15rem;
-  color: #eee;
+  font-size: ${({ theme }) => theme.fontSize.mobile.medium};
+  color: ${({ theme }) => theme.color.white};
   z-index: 5;
-  cursor: pointer;
 `;
 
 export const StyledNav = styled.nav`
@@ -33,7 +33,7 @@ export const StyledNav = styled.nav`
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #111;
+  background-color: ${({ theme }) => theme.color.black};
   padding: 0 7.5%;
 
   ${({ nav }) =>
@@ -43,12 +43,17 @@ export const StyledNav = styled.nav`
     `};
 `;
 
-export const StyledNavLinks = styled.a`
+export const StyledNavLinks = styled(NavLink)`
   font-family: "Poppins Medium";
   text-transform: uppercase;
-  color: #eee;
+  color: ${({ theme }) => theme.color.white};
   text-decoration: none;
-  font-size: 1.75rem;
+  font-size: ${({ theme }) => theme.fontSize.mobile.large};
+
+  &.active {
+    pointer-events: none;
+    color: ${({ theme }) => theme.color.veryLightBlack};
+  }
 `;
 
 export const Hamburger = styled.button`

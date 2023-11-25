@@ -11,8 +11,8 @@ export const Container = styled.div`
 export const StyledDivider = styled.div`
   width: 100%;
   height: 1px;
-  background-color: ${({ color }) => color};
-  /* mix-blend-mode: difference; */
+  background-color: ${({ theme }) => theme.color.veryLightBlack};
+  mix-blend-mode: difference;
   margin: ${({ margin }) => (margin ? margin : 0)};
 `;
 

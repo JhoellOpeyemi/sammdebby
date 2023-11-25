@@ -12,7 +12,7 @@ export const PictureOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.375);
+  background-color: ${({ theme }) => theme.color.overlay};
 `;
 
 export const StyledPicture = styled.img`

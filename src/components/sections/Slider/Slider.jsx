@@ -4,7 +4,6 @@ import Picture from "../../Picture/Picture";
 import { StyledSlider } from "./Slider.styled";
 
 const Slider = ({ images }) => {
-  console.log(images);
   return (
     <StyledSlider>
       {images.map((img, index) => {

@@ -17,16 +17,16 @@ const WhoWeAre = () => {
       <SectionHeading>Who we are</SectionHeading>
 
       <TextGroup>
-        <StyledText color="#444">
+        <StyledText>
           We are not just a group of music experts, we are a team dedicated to
           instilling our interpretation of music into you.
         </StyledText>
-        <StyledText color="#444">
-          We see the world through the lens of music
-        </StyledText>
+        <StyledText>We see the world through the lens of music</StyledText>
       </TextGroup>
 
-      <Button type="primary">Read more</Button>
+      <Button to="/about" type="primary">
+        Read more
+      </Button>
 
       <SliderContainer>
         <Slider images={images} />

@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   background: none;
-  color: #7e83fd;
+  display: inline-block;
+  color: ${({ theme }) => theme.color.secondary};
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: ${({ theme }) => theme.fontSize.mobile.normal};
   font-family: "Poppins Medium";
 
   ${({ type }) =>
@@ -21,7 +23,7 @@ export const Button = styled.button`
         left: 0;
         width: 75%;
         height: 1px;
-        background-color: #7e83fd;
+        background-color: ${({ theme }) => theme.color.secondary};
       }
     `}
 
@@ -32,12 +34,5 @@ export const Button = styled.button`
       border-radius: 0.75rem;
       letter-spacing: 4px;
       padding: 0.75rem 1rem;
-    `}
-
-    ${({ text }) =>
-    text === "center" &&
-    css`
-      left: 50%;
-      transform: translateX(-50%);
     `}
 `;

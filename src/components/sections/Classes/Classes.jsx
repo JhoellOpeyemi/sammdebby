@@ -9,7 +9,7 @@ import { Button } from "../../../styled/Button.styled";
 const Classes = () => {
   return (
     <>
-      <StyledDivider color="rgba(0,0,0,0.25)" />
+      <StyledDivider />
       <ClassesSection>
         <SectionHeading>Our classes</SectionHeading>
 
@@ -39,9 +39,11 @@ const Classes = () => {
           />
         </CardGroup>
 
-        <Button type="primary" text="center">
-          View all classes
-        </Button>
+        <div className="link">
+          <Button to="/classes" type="primary">
+            View all classes
+          </Button>
+        </div>
 
         <BackgroundIcon
           src={bgIcon}

@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const ClassesSection = styled.section`
   position: relative;
   padding: 4rem 0 3rem 0;
+
+  .link {
+    text-align: center;
+  }
 `;
 
 export const CardGroup = styled.div`

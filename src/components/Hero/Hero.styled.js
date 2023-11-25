@@ -13,7 +13,6 @@ export const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-
   background: linear-gradient(
     180deg,
     #000000 0%,
@@ -29,11 +28,7 @@ export const ImagesContainer = styled.div`
   height: 100%;
 `;
 
-export const Images = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-`;
+export const Images = styled.div``;
 
 export const Image = styled.img`
   position: absolute;
@@ -52,17 +47,18 @@ export const HeroTexts = styled.div`
   width: 100%;
   padding: 0 7.5%;
   text-align: center;
-  color: #eee;
+  color: ${({ theme }) => theme.color.white};
 
   h1 {
     font-family: "Poppins SemiBold";
-    font-size: 1.875rem;
+    font-size: ${({ theme }) => theme.fontSize.mobile.xLarge};
     text-transform: uppercase;
     margin-bottom: 1rem;
+    line-height: 1.3;
   }
 
   p {
     font-family: "Ink Free Regular";
-    font-size: 1.25rem;
+    font-size: ${({ theme }) => theme.fontSize.mobile.medium};
   }
 `;
