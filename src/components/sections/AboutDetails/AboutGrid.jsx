@@ -1,10 +1,10 @@
-import { StyledText } from "../../styled/Text.styled";
-import Picture from "../Picture/Picture";
+import { StyledText } from "../../../styled/Text.styled";
+import Picture from "../../Picture/Picture";
 import { Grid, GridItems } from "./AboutGrid.styled";
 
-import TestImage from "../../assets/images/test-image.png";
-import TestImage2 from "../../assets/images/test-image2.png";
-import TestImage3 from "../../assets/images/test-image3.png";
+import TestImage from "../../../assets/images/test-image.png";
+import TestImage2 from "../../../assets/images/test-image2.png";
+import TestImage3 from "../../../assets/images/test-image3.png";
 
 const AboutGrid = () => {
   return (

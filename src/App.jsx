@@ -11,6 +11,7 @@ import About from "./components/pages/About";
 import GlobalStyles from "./styled/Global.styled";
 
 import { theme } from "./theme";
+// import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const router = createBrowserRouter(
