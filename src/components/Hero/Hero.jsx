@@ -28,7 +28,7 @@ const Hero = () => {
       } else {
         images.current.childNodes[0].classList.add("current-image");
       }
-    }, 4000);
+    }, 5500);
   }, []);
 
   return (

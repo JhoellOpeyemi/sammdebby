@@ -16,9 +16,9 @@ export const Overlay = styled.div`
   background: linear-gradient(
     180deg,
     #0c0c0c 0%,
-    rgba(0, 0, 0, 0.7) 25.77%,
-    rgba(0, 0, 0, 0.75) 55.77%,
-    rgba(0, 0, 0, 0.95) 100%
+    rgba(0, 0, 0, 0.75) 40.77%,
+    rgba(0, 0, 0, 0.75) 58.77%,
+    rgba(0, 0, 0, 0.95) 90%
   );
 `;
 
@@ -38,11 +38,11 @@ export const Image = styled.img`
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: all 700ms ease-out;
+  transition: all 1s linear;
 
   &.current-image {
     opacity: 1;
-    transition: all 700ms ease-in;
+    transition: all 1s linear;
   }
 `;
 
@@ -58,7 +58,7 @@ export const HeroTexts = styled.div`
 
   h1 {
     font-family: "Poppins SemiBold";
-    font-size: ${({ theme }) => theme.fontSize.mobile.xLarge};
+    font-size: ${({ theme }) => theme.fontSize.mobile.large};
     text-transform: uppercase;
     margin-bottom: 1rem;
     line-height: 1.3;
