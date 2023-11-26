@@ -16,9 +16,9 @@ export const Overlay = styled.div`
   background: linear-gradient(
     180deg,
     #0c0c0c 0%,
-    rgba(0, 0, 0, 0.75) 40.77%,
-    rgba(0, 0, 0, 0.75) 58.77%,
-    rgba(0, 0, 0, 0.95) 90%
+    rgba(0, 0, 0, 0.79) 40.77%,
+    // rgba(0, 0, 0, 0.75) 58.77%,
+    rgba(0, 0, 0, 0.95) 100%
   );
 `;
 
@@ -38,11 +38,11 @@ export const Image = styled.img`
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: all 1s linear;
+  transition: all 850ms linear;
 
   &.current-image {
     opacity: 1;
-    transition: all 1s linear;
+    transition: all 850ms linear;
   }
 `;
 
