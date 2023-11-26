@@ -15,9 +15,9 @@ export const Overlay = styled.div`
   height: 100%;
   background: linear-gradient(
     180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.75) 31.77%,
-    rgba(0, 0, 0, 0.75) 56.77%,
+    #0c0c0c 0%,
+    rgba(0, 0, 0, 0.7) 25.77%,
+    rgba(0, 0, 0, 0.75) 55.77%,
     rgba(0, 0, 0, 0.95) 100%
   );
 `;
@@ -37,6 +37,13 @@ export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
+  transition: all 700ms ease-out;
+
+  &.current-image {
+    opacity: 1;
+    transition: all 700ms ease-in;
+  }
 `;
 
 export const HeroTexts = styled.div`
