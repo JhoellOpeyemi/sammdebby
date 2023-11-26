@@ -36,10 +36,9 @@ const WhoWeAre = () => {
       <BackgroundIcon
         src={bgIcon}
         alt=""
-        top="8rem"
+        top="19%"
         right="-5.8rem"
         width="20rem"
-        height="20rem"
       />
     </StyledSection>
   );

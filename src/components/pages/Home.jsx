@@ -6,8 +6,10 @@ import WhoWeAre from "../sections/WhoWeAre/WhoWeAre";
 import TestImage from "../../assets/images/test-image.png";
 import { Container } from "../../styled/Utils.styled";
 import Classes from "../sections/Classes/Classes";
+import useDocumentTitle from "../../useDocumentTitle";
 
 const Home = () => {
+  useDocumentTitle("Home");
   return (
     <>
       <Hero />

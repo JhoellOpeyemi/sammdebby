@@ -51,7 +51,6 @@ const Classes = () => {
           top="45.7%"
           left="-5rem"
           width="22rem"
-          height="22rem"
         />
       </ClassesSection>
     </>

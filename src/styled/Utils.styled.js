@@ -23,6 +23,6 @@ export const BackgroundIcon = styled.img`
   right: ${({ right }) => (right ? right : "unset")};
   bottom: ${({ bottom }) => (bottom ? bottom : "unset")};
   width: ${({ width }) => (width ? width : "100%")};
-  height: ${({ height }) => (height ? height : "100%")};
+  height: ${({ width }) => (width ? width : "100%")};
   z-index: -1;
 `;
