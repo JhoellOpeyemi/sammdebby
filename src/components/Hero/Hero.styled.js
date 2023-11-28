@@ -17,7 +17,6 @@ export const Overlay = styled.div`
     180deg,
     #0c0c0c 0%,
     rgba(0, 0, 0, 0.79) 40.77%,
-    // rgba(0, 0, 0, 0.75) 58.77%,
     rgba(0, 0, 0, 0.95) 100%
   );
 `;
@@ -58,7 +57,11 @@ export const HeroTexts = styled.div`
 
   h1 {
     font-family: "Poppins SemiBold";
-    font-size: ${({ theme }) => theme.fontSize.mobile.large};
+    font-size: clamp(
+      ${({ theme }) => theme.fontSize.large},
+      4vw + 0.5rem,
+      ${({ theme }) => theme.fontSize.largePageHeading}
+    );
     text-transform: uppercase;
     margin-bottom: 1rem;
     line-height: 1.3;
@@ -66,6 +69,6 @@ export const HeroTexts = styled.div`
 
   p {
     font-family: "Ink Free Regular";
-    font-size: ${({ theme }) => theme.fontSize.mobile.medium};
+    font-size: ${({ theme }) => theme.fontSize.medium};
   }
 `;

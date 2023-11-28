@@ -6,7 +6,7 @@ export const Button = styled(Link)`
   display: inline-block;
   color: ${({ theme }) => theme.color.secondary};
   text-transform: uppercase;
-  font-size: ${({ theme }) => theme.fontSize.mobile.normal};
+  font-size: ${({ theme }) => theme.fontSize.normal};
   font-family: "Poppins Medium";
 
   ${({ type }) =>

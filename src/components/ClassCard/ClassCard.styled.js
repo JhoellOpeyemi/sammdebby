@@ -17,14 +17,14 @@ export const CardContainer = styled.div`
 
 export const CardType = styled.h4`
   font-family: "Poppins SemiBold";
-  font-size: ${({ theme }) => theme.fontSize.mobile.medium};
+  font-size: ${({ theme }) => theme.fontSize.medium};
   margin-bottom: 1.35rem;
   color: ${({ theme }) => theme.color.veryLightBlack};
 `;
 
 export const Price = styled.p`
   font-family: "Poppins SemiBold";
-  font-size: ${({ theme }) => theme.fontSize.mobile.large};
+  font-size: ${({ theme }) => theme.fontSize.large};
   color: ${({ theme }) => theme.color.black};
 `;
 

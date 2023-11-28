@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
 export const Address = styled.div`
   h5 {
     font-family: "Poppins SemiBold";
-    font-size: ${({ theme }) => theme.fontSize.mobile.medium};
+    font-size: ${({ theme }) => theme.fontSize.medium};
     text-transform: uppercase;
     margin: 0 0 1rem;
   }
@@ -18,7 +18,7 @@ export const Contact = styled.div`
 
   h5 {
     font-family: "Poppins SemiBold";
-    font-size: ${({ theme }) => theme.fontSize.mobile.medium};
+    font-size: ${({ theme }) => theme.fontSize.medium};
     text-transform: uppercase;
     margin: 0 0 1rem;
   }
@@ -31,7 +31,7 @@ export const LinksGroup = styled.div`
 
   a {
     font-family: "Poppins Regular";
-    font-size: ${({ theme }) => theme.fontSize.mobile.normal};
+    font-size: ${({ theme }) => theme.fontSize.normal};
     margin-bottom: 1rem;
   }
 `;
