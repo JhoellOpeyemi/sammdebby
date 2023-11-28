@@ -34,8 +34,8 @@ export const Name = styled(NavLink)`
   font-family: "Ink Free Regular";
   font-size: clamp(
     ${({ theme }) => theme.fontSize.medium},
-    2vw + 0.45rem,
-    ${({ theme }) => theme.fontSize.xLarge}
+    2vw + 0.5rem,
+    ${({ theme }) => theme.fontSize.large}
   );
   color: ${({ theme }) => theme.color.white};
   z-index: 5;
@@ -95,8 +95,8 @@ export const StyledNavLinks = styled(NavLink)`
     text-transform: capitalize;
     font-size: clamp(
       ${({ theme }) => theme.fontSize.medium},
-      2vw + 0.2rem,
-      ${({ theme }) => theme.fontSize.large}
+      1.6vw + 0.2rem,
+      ${({ theme }) => theme.fontSize.xMedium}
     );
     color: ${({ theme }) => theme.color.offWhite};
 

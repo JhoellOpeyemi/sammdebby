@@ -27,7 +27,7 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    if (window.innerWidth >= "768") {
+    if (window.innerWidth >= 768) {
       setNav(true);
     }
   }, []);

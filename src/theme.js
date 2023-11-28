@@ -15,7 +15,7 @@ export const theme = {
     secondary: "#7e83fd",
     lightSecondary: "rgba(0,10,255,0.3)",
     bgColor: "#fbfbfb",
-    white: "#eee",
+    white: "#ddd",
     offWhite: "#aaa",
     black: "#222",
     text: "#444",

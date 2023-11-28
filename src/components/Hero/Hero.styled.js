@@ -5,6 +5,9 @@ export const HeroWrapper = styled.div`
   height: 100vh;
   width: 100%;
   overflow: hidden;
+
+  @media (min-width: ${({ theme }) => theme.break.tab}) {
+  }
 `;
 
 export const Overlay = styled.div`
@@ -25,6 +28,22 @@ export const ImagesContainer = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+
+  @media (min-width: ${({ theme }) => theme.break.tab}) {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 70%;
+    height: 100%;
+  }
+
+  @media (min-width: ${({ theme }) => theme.break.desktop}) {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    width: 52.5%;
+    height: 100%;
+  }
 `;
 
 export const Images = styled.div``;
@@ -54,6 +73,7 @@ export const HeroTexts = styled.div`
   padding: 0 7.5%;
   text-align: center;
   color: ${({ theme }) => theme.color.white};
+  z-index: 2;
 
   h1 {
     font-family: "Poppins SemiBold";
@@ -69,6 +89,18 @@ export const HeroTexts = styled.div`
 
   p {
     font-family: "Ink Free Regular";
-    font-size: ${({ theme }) => theme.fontSize.medium};
+    font-size: clamp(
+      ${({ theme }) => theme.fontSize.medium},
+      2vw + 0.5rem,
+      ${({ theme }) => theme.fontSize.xLarge}
+    );
+  }
+
+  @media (min-width: ${({ theme }) => theme.break.tab}) {
+    text-align: left;
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
   }
 `;
