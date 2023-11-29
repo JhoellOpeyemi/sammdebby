@@ -6,7 +6,11 @@ export const Button = styled(Link)`
   display: inline-block;
   color: ${({ theme }) => theme.color.secondary};
   text-transform: uppercase;
-  font-size: ${({ theme }) => theme.fontSize.normal};
+  font-size: clamp(
+    ${({ theme }) => theme.fontSize.normal},
+    1.25vw + 0.5rem,
+    ${({ theme }) => theme.fontSize.xMedium}
+  );
   font-family: "Poppins Medium";
 
   ${({ type }) =>
@@ -34,5 +38,9 @@ export const Button = styled(Link)`
       border-radius: 0.75rem;
       letter-spacing: 4px;
       padding: 0.75rem 1rem;
+
+      @media (min-width: ${({ theme }) => theme.break.tab}) {
+        padding: 1rem 1.25rem;
+      }
     `}
 `;

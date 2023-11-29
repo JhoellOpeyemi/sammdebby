@@ -6,9 +6,9 @@ import {
   StyledPicture,
 } from "./Picture.styled";
 
-const Picture = ({ width, height, src }) => {
+const Picture = ({ src, type }) => {
   return (
-    <PictureWrapper width={width} height={height}>
+    <PictureWrapper type={type}>
       <PictureOverlay />
       <StyledPicture src={src} alt="" />
     </PictureWrapper>
@@ -16,8 +16,7 @@ const Picture = ({ width, height, src }) => {
 };
 
 Picture.propTypes = {
-  width: PropTypes.string,
-  height: PropTypes.string,
+  type: PropTypes.string,
   src: PropTypes.string,
 };
 

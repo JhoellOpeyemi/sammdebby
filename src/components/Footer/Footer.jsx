@@ -30,9 +30,9 @@ const Footer = () => {
             <a href="/">sammdebbymusic@gmail.com</a>
           </LinksGroup>
         </Contact>
-
-        <Copyright> &copy; Sammdebby Music 2023</Copyright>
       </FooterContainer>
+
+      <Copyright> &copy; Sammdebby Music 2023</Copyright>
     </Container>
   );
 };

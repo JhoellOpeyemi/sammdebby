@@ -3,14 +3,18 @@ import Nav from "./Nav/Nav";
 import Footer from "./Footer/Footer";
 import ScrollToTop from "../ScrollToTop";
 
+import { AppContextProvider } from "../context/AppContext";
+
 const Root = () => {
   return (
-    <>
-      <ScrollToTop />
-      <Nav />
-      <Outlet />
-      <Footer />
-    </>
+    <AppContextProvider>
+      <>
+        <ScrollToTop />
+        <Nav />
+        <Outlet />
+        <Footer />
+      </>
+    </AppContextProvider>
   );
 };
 

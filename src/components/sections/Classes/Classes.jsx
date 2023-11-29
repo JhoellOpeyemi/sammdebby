@@ -13,12 +13,14 @@ const Classes = () => {
       <ClassesSection>
         <SectionHeading>Our classes</SectionHeading>
 
-        <StyledText>
+        <StyledText className="text">
           These classes were designed with utmost considerations to take you
           from the level you are to the next level in playing and understanding
           your favorite musical instruments.
         </StyledText>
-        <StyledText>* The musical instruments are provided by us</StyledText>
+        <StyledText className="text">
+          * The musical instruments are provided by us
+        </StyledText>
 
         <CardGroup>
           <ClassCard
@@ -45,13 +47,7 @@ const Classes = () => {
           </Button>
         </div>
 
-        <BackgroundIcon
-          src={bgIcon}
-          alt=""
-          top="45.7%"
-          left="-5rem"
-          width="22rem"
-        />
+        <BackgroundIcon className="bgIcon" src={bgIcon} alt="" />
       </ClassesSection>
     </>
   );

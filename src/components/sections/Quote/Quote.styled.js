@@ -8,4 +8,8 @@ export const QuoteWrapper = styled.section`
   p {
     color: ${({ theme }) => theme.color.white};
   }
+
+  @media (min-width: ${({ theme }) => theme.break.desktop}) {
+    padding: 10rem 13rem;
+  }
 `;

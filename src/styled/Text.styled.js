@@ -2,7 +2,11 @@ import styled, { css } from "styled-components";
 
 export const StyledText = styled.p`
   font-family: "Poppins Regular";
-  font-size: ${({ theme }) => theme.fontSize.normal};
+  font-size: clamp(
+    ${({ theme }) => theme.fontSize.normal},
+    2vw + 0.6rem,
+    ${({ theme }) => theme.fontSize.largeText}
+  );
   color: ${({ theme }) => theme.color.text};
   margin-bottom: ${({ marginBottom }) =>
     marginBottom ? marginBottom : "1rem"};
@@ -10,16 +14,28 @@ export const StyledText = styled.p`
   ${({ type }) =>
     type === "medium" &&
     css`
-      font-size: ${({ theme }) => theme.fontSize.medium};
+      font-size: clamp(
+        ${({ theme }) => theme.fontSize.medium},
+        2vw + 0.5rem,
+        ${({ theme }) => theme.fontSize.xLarge}
+      );
     `}
 `;
 
 export const SectionHeading = styled.h2`
   font-family: "Poppins Bold";
-  font-size: ${({ theme }) => theme.fontSize.sectionHeading};
+  font-size: clamp(
+    ${({ theme }) => theme.fontSize.sectionHeading},
+    2vw + 0.85rem,
+    ${({ theme }) => theme.fontSize.largeSectionHeading}
+  );
   color: ${({ theme }) => theme.color.text};
   text-transform: uppercase;
   margin-bottom: 2rem;
+
+  @media (min-width: ${({ theme }) => theme.break.tab}) {
+    margin-bottom: 2.5rem;
+  }
 `;
 
 export const PageHeading = styled.h1`

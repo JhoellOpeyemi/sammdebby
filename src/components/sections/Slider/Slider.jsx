@@ -5,13 +5,13 @@ import { StyledSlider } from "./Slider.styled";
 
 const Slider = ({ images }) => {
   return (
-    <StyledSlider>
-      {images.map((img, index) => {
-        return (
-          <Picture key={index} width="10.9375rem" height="18.8rem" src={img} />
-        );
-      })}
-    </StyledSlider>
+    <>
+      <StyledSlider>
+        {images.map((img, index) => {
+          return <Picture key={index} type="slider" src={img} />;
+        })}
+      </StyledSlider>
+    </>
   );
 };
 
