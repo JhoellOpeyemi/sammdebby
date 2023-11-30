@@ -7,8 +7,12 @@ export const HeadingsSlide = styled.div`
 `;
 
 export const Headings = styled.div`
-  animation: slide 18s linear infinite;
+  animation: slide 25s linear infinite;
   padding-right: 5rem;
+
+  @media (min-width: ${({ theme }) => theme.break.tab}) {
+    padding-right: 15rem;
+  }
 
   @keyframes slide {
     from {

@@ -30,6 +30,15 @@ export const PictureWrapper = styled.div`
         height: 38rem;
       }
     `}
+
+    ${({ type }) =>
+    type === "grid" &&
+    css`
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      max-height: 100%;
+    `}
 `;
 
 export const PictureOverlay = styled.div`

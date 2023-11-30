@@ -9,7 +9,7 @@ export const theme = {
     sectionHeading: "1.375rem",
     largeSectionHeading: "2.5rem",
     pageHeading: "2.75rem",
-    largePageHeading: "4rem",
+    largePageHeading: "4.5rem",
   },
 
   color: {

@@ -17,18 +17,16 @@ const AboutDetails = () => {
         <Headings>
           <PageHeading>The Sammdebby Team</PageHeading>
         </Headings>
+        <Headings>
+          <PageHeading>The Sammdebby Team</PageHeading>
+        </Headings>
       </HeadingsSlide>
 
       <AboutGrid />
 
+      <BackgroundIcon className="bgIcon3" src={bgIcon3} alt="" />
       <BackgroundIcon
-        src={bgIcon3}
-        alt=""
-        top="30%"
-        left="-4rem"
-        width="17rem"
-      />
-      <BackgroundIcon
+        className="bgIcon1"
         src={bgIcon1}
         alt=""
         top="60%"

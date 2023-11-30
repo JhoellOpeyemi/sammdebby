@@ -40,8 +40,16 @@ export const SectionHeading = styled.h2`
 
 export const PageHeading = styled.h1`
   font-family: "Poppins Bold";
-  font-size: ${({ theme }) => theme.fontSize.pageHeading};
+  font-size: clamp(
+    ${({ theme }) => theme.fontSize.pageHeading},
+    4vw + 0.85rem,
+    ${({ theme }) => theme.fontSize.largePageHeading}
+  );
   color: ${({ theme }) => theme.color.veryLightBlack};
   text-transform: uppercase;
   margin-bottom: 2.75rem;
+
+  @media (min-width: ${({ theme }) => theme.break.desktop}) {
+    margin-bottom: 5rem;
+  }
 `;

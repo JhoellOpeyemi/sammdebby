@@ -26,7 +26,7 @@ export const NavWrapper = styled.div`
 
   @media (min-width: ${({ theme }) => theme.break.tab}) {
     mix-blend-mode: difference;
-    padding: 3.75rem 0;
+    padding: 3.25rem 0;
   }
 `;
 
@@ -35,7 +35,7 @@ export const Name = styled(NavLink)`
   font-size: clamp(
     ${({ theme }) => theme.fontSize.medium},
     2vw + 0.5rem,
-    ${({ theme }) => theme.fontSize.large}
+    ${({ theme }) => theme.fontSize.xMedium}
   );
   color: ${({ theme }) => theme.color.white};
   z-index: 5;
