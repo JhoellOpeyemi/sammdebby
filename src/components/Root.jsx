@@ -13,7 +13,7 @@ const Root = () => {
 
   return (
     <AppContextProvider>
-      <AnimatePresence mode="wait">
+      <AnimatePresence initial={false} mode="wait">
         <ScrollToTop />
         {!loader && <Nav />}
         <Outlet context={[loader, setLoader]} />

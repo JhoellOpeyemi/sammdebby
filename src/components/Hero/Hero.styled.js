@@ -85,6 +85,7 @@ export const HeroTexts = styled.div`
     text-transform: uppercase;
     margin-bottom: 1rem;
     line-height: 1.3;
+    overflow: hidden;
   }
 
   p {
@@ -94,6 +95,7 @@ export const HeroTexts = styled.div`
       2vw + 0.5rem,
       ${({ theme }) => theme.fontSize.xLarge}
     );
+    overflow: hidden;
   }
 
   @media (min-width: ${({ theme }) => theme.break.tab}) {

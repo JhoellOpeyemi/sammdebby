@@ -3,7 +3,7 @@ export const heroVariants = {
   animate: {
     transition: {
       staggerChildren: 0.4,
-      delayChildren: 0.35,
+      delayChildren: 0.3,
       staggerDirection: -1,
     },
   },
@@ -23,4 +23,33 @@ export const mainVariants = {
   },
 };
 
-export const TextVariants = {};
+export const heroTextsVariants = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerDirection: 1,
+    },
+  },
+};
+
+export const textVariants = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerChildren: 0.04,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+export const subtitleVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 2.35,
+    },
+  },
+};
