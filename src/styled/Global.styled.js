@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
     body {
         background-color: ${({ theme }) => theme.color.bgColor};
         position: relative;
+
+        &.no-scroll {
+            overflow: hidden;
+        }
     }
 
     p {

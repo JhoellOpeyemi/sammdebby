@@ -26,10 +26,12 @@ export const Overlay = styled.div`
 
 export const ImagesContainer = styled.div`
   position: relative;
+  display: grid;
+  place-items: center;
   width: 100%;
   height: 100%;
 
-  @media (min-width: ${({ theme }) => theme.break.tab}) {
+  /* @media (min-width: ${({ theme }) => theme.break.tab}) {
     position: absolute;
     top: 2rem;
     right: 0;
@@ -43,10 +45,15 @@ export const ImagesContainer = styled.div`
     right: 4rem;
     width: 52.5%;
     height: 100%;
-  }
+  } */
 `;
 
-export const Images = styled.div``;
+export const Images = styled.div`
+  width: min(65%, 600px);
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+`;
 
 export const Image = styled.img`
   position: absolute;
@@ -55,13 +62,6 @@ export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0;
-  transition: all 850ms linear;
-
-  &.current-image {
-    opacity: 1;
-    transition: all 850ms linear;
-  }
 `;
 
 export const HeroTexts = styled.div`
