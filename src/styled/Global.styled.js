@@ -30,6 +30,10 @@ const GlobalStyles = createGlobalStyle`
 
     span {
         display: inline-block;
+
+        &.outer-span {
+            overflow: hidden;
+        }
     }
 `;
 

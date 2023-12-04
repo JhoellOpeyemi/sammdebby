@@ -11,13 +11,8 @@ import {
 
 import Sax from "../../assets/images/sax-mobile-min.png";
 
-import {
-  heroTextsVariants,
-  heroVariants,
-  mainVariants,
-  subtitleVariants,
-  textVariants,
-} from "./Hero.motion";
+import { heroVariants, mainVariants, subtitleVariants } from "./Hero.motion";
+import { textVariants } from "../../animations";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 
 const Hero = () => {
@@ -28,8 +23,9 @@ const Hero = () => {
         variants={heroVariants}
         initial="initial"
         animate="animate"
+        key="home"
       >
-        <HeroTexts as={motion.div} variants={heroTextsVariants}>
+        <HeroTexts>
           <motion.h1 variants={textVariants}>
             <AnimatedLetters words="Sammdebby Music" />
           </motion.h1>

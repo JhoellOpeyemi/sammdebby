@@ -5,7 +5,6 @@ import { motion, useAnimate, usePresence } from "framer-motion";
 import { Image, ImageContainer, Reveal, StyledLoader } from "./Loader.styled";
 import Sax from "../../assets/images/sax-mobile-min.png";
 import Mic from "../../assets/images/mic-mobile-min.png";
-import Piano from "../../assets/images/piano-mobile-min.png";
 import { Overlay } from "./Loader.styled";
 
 import { enterAnimation } from "./Loader.motion";
@@ -29,11 +28,6 @@ const Loader = ({ setLoader }) => {
           <Reveal className="base-reveal" />
         </ImageContainer>
 
-        <ImageContainer className="second">
-          <Overlay />
-          <Image src={Piano} alt="" />
-          <Reveal className="second-reveal" />
-        </ImageContainer>
         <ImageContainer className="first">
           <Overlay />
           <Image src={Mic} alt="" />
@@ -45,7 +39,7 @@ const Loader = ({ setLoader }) => {
 };
 
 Loader.propTypes = {
-  setLoader: PropTypes.function,
+  setLoader: PropTypes.func,
 };
 
 export default Loader;

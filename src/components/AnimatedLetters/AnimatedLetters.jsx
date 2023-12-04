@@ -2,16 +2,39 @@ import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
 const AnimatedLetters = ({ words }) => {
-  const wordsArray = words.split("");
+  let lettersArray = [];
+  let wordsArray = [];
 
-  const text = {
+  if (words.length <= 30) {
+    lettersArray = words.split("");
+  } else {
+    wordsArray = words.split(" ");
+  }
+
+  const hero = {
     initial: {
       y: 100,
     },
     animate: {
       y: 0,
       transition: {
-        duration: 0.8,
+        duration: 0.45,
+        ease: [0.6, 0.01, -0.05, 0.9],
+      },
+    },
+  };
+
+  const text = {
+    initial: {
+      y: 100,
+      rotate: 20,
+    },
+    animate: {
+      y: 0,
+      rotate: 0,
+
+      transition: {
+        duration: 0.6,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
@@ -24,15 +47,29 @@ const AnimatedLetters = ({ words }) => {
       return letter;
     }
   };
+
   return (
     <>
-      {wordsArray.map((letter, index) => {
-        return (
-          <motion.span variants={text} key={index}>
-            {checkSpace(letter)}
-          </motion.span>
-        );
-      })}
+      {lettersArray.length > 1 &&
+        lettersArray.map((letter, index) => {
+          return (
+            <motion.span variants={hero} key={index}>
+              {checkSpace(letter)}
+            </motion.span>
+          );
+        })}
+
+      {wordsArray.length > 1 &&
+        wordsArray.map((word, index) => {
+          return (
+            <span key={index} className="outer-span">
+              <motion.span variants={text}>
+                {word}
+                <>&nbsp;</>
+              </motion.span>
+            </span>
+          );
+        })}
     </>
   );
 };

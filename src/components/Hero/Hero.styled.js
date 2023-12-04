@@ -78,8 +78,8 @@ export const HeroTexts = styled.div`
   h1 {
     font-family: "Poppins SemiBold";
     font-size: clamp(
-      ${({ theme }) => theme.fontSize.large},
-      4vw + 0.5rem,
+      ${({ theme }) => theme.fontSize.xMedium},
+      4vw + 0.849rem,
       ${({ theme }) => theme.fontSize.largePageHeading}
     );
     text-transform: uppercase;

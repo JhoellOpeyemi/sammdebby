@@ -7,6 +7,7 @@ export const QuoteWrapper = styled.section`
 
   p {
     color: ${({ theme }) => theme.color.white};
+    overflow: hidden;
   }
 
   @media (min-width: ${({ theme }) => theme.break.desktop}) {
